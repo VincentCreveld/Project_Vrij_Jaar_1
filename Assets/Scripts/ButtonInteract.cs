@@ -22,13 +22,12 @@ public class ButtonInteract : MonoBehaviour, IInteractable {
 
     public void Interact()
     {
-        StartCoroutine(ChangeColors());
+        Debug.Log("Pressed");
+        ChangeColors();
     }
 
-    public IEnumerator ChangeColors()
+    public void ChangeColors()
     {
         objToChange.GetComponent<Renderer>().material = mat1;
-        yield return new WaitForSeconds(1.5f);
-        objToChange.GetComponent<Renderer>().material = currentMat;
     }
 }

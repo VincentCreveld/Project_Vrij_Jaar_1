@@ -81,10 +81,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Interfaces.cs" />
     <Compile Include="Assets\Materials\test.cs" />
+    <Compile Include="Assets\Scripts\ButtonInteract.cs" />
     <Compile Include="Assets\Scripts\HighlightableObj.cs" />
+    <Compile Include="Assets\Scripts\Interfaces.cs" />
+    <Compile Include="Assets\Scripts\PickupableObj.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\ShufflePiece.cs" />
+    <Compile Include="Assets\Scripts\ShufflePuzzle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />

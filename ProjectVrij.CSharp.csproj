@@ -52,6 +52,9 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -66,6 +69,9 @@
     </Reference>
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VR">
       <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
@@ -83,10 +89,18 @@
   <ItemGroup>
     <Compile Include="Assets\Materials\test.cs" />
     <Compile Include="Assets\Scripts\ButtonInteract.cs" />
+    <Compile Include="Assets\Scripts\ElevatorScripts\ElevatorButton.cs" />
+    <Compile Include="Assets\Scripts\ElevatorScripts\ElevatorController.cs" />
+    <Compile Include="Assets\Scripts\ElevatorScripts\ElevatorDoor.cs" />
     <Compile Include="Assets\Scripts\HighlightableObj.cs" />
     <Compile Include="Assets\Scripts\Interfaces.cs" />
+    <Compile Include="Assets\Scripts\MazeScripts\MazeController.cs" />
+    <Compile Include="Assets\Scripts\MazeScripts\MazePart.cs" />
+    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\PickupableObj.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\ShufflePiece.cs" />
+    <Compile Include="Assets\Scripts\ShufflePuzzle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />

@@ -5,13 +5,29 @@ using UnityEngine;
 public class HighlightableObj : MonoBehaviour, IHighlightable
 {
     public AnimationCurve _curve;
+    public bool PullMatFromObj;
+    public GameObject ObjToPullMat;
     Material mat;
     float timer;
     public float duration;
 
     public void Start()
     {
-        mat = GetComponent<Renderer>().material;
+        if (PullMatFromObj == false)
+        {
+            if (transform.GetComponent<MeshRenderer>().material != null)
+            {
+                ObjToPullMat = gameObject;
+            }
+        }
+        
+        mat = ObjToPullMat.GetComponent<MeshRenderer>().material;
+
+    }
+
+    public Material ReturnMatGO()
+    {
+        return mat;
     }
 
     public void Highlight()
