@@ -39,8 +39,6 @@ public class PickupableObj : MonoBehaviour, IPickupable {
     public void MoveGO(Vector3 pos)
     {
         transform.position = pos;
-        //transform.position += new Vector3(0, GetComponent<Collider>().bounds.max.y / 2 - GetComponent<Collider>().bounds.min.y / 2, 0);
-        //rb.useGravity = true;
         AlignWithGroundBelow();
         DropObj();
     }

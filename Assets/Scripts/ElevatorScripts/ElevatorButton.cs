@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
-
 public class ElevatorButton : MonoBehaviour, IInteractable {
+    public GameObject ElevatorManager;
     ElevatorController elevatorController;
     public int SceneToLoad;
 
     void Start()
     {
-        elevatorController = transform.parent.GetComponent<ElevatorController>();
+        elevatorController = ElevatorManager.GetComponent<ElevatorController>();
     }
 
     public void CheckInput()

@@ -32,4 +32,8 @@ public interface IInteractable
     void Interact();
     void CheckInput();
 }
-
+ public interface IMoveElement
+{
+    GameObject ReturnCamPos();
+    string ReturnString();
+}
